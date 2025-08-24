@@ -2,25 +2,25 @@
 <html lang="en" class="scroll-smooth">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Samen Majumder - Personal Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 
-<body class="bg-gray-900 text-gray-200">
+<body class="bg-gray-900 text-gray-200 font-inter">
 
     <!-- Header -->
     <header class="bg-gray-900/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-gray-700">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-3xl font-bold text-lime-400 hover:text-lime-300 transition-colors">SM</a>
-            <nav class="hidden md:flex space-x-8">
+            <nav class="hidden md:flex space-x-6">
                 <a href="#home" class="text-gray-300 hover:text-lime-400 transition-colors">Home</a>
                 <a href="#about" class="text-gray-300 hover:text-lime-400 transition-colors">About</a>
                 <a href="#projects" class="text-gray-300 hover:text-lime-400 transition-colors">Projects</a>
@@ -35,109 +35,88 @@
             </button>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#home" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-800">Home</a>
-            <a href="#about" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-800">About</a>
-            <a href="#projects" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-800">Projects</a>
-            <a href="#contact" class="block py-2 px-6 text-sm text-gray-300 hover:bg-gray-800">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden flex flex-col space-y-2 pb-4 px-6 transition-all duration-300">
+            <a href="#home" class="text-gray-300 hover:text-lime-400 transition-colors">Home</a>
+            <a href="#about" class="text-gray-300 hover:text-lime-400 transition-colors">About</a>
+            <a href="#projects" class="text-gray-300 hover:text-lime-400 transition-colors">Projects</a>
+            <a href="#contact" class="text-gray-300 hover:text-lime-400 transition-colors">Contact</a>
         </div>
     </header>
 
-    <main class="pt-16">
+    <main class="pt-20">
         <!-- Hero Section -->
         <section id="home"
-            class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16">
-            <div class="container mx-auto px-6 text-center">
+            class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16 px-6">
+            <div class="max-w-4xl mx-auto text-center">
                 <div class="flex flex-col items-center">
-
-                    <!-- Profile Picture -->
-                    <div class="relative w-60 h-60 md:w-80 md:h-80 mb-10">
+                    <div class="relative w-80 h-80 sm:w-96 sm:h-96 mb-8">
                         <img src="assets/PicA2.jpg" alt="Samen Majumder"
-                            class="w-full h-full object-cover rounded-full shadow-2xl border-1 border-lime-500 transition-transform duration-400 hover:scale-105" />
+                            class="w-full h-full object-cover rounded-full shadow-2xl transition-transform duration-300 hover:scale-105" />
                     </div>
 
-                    <!-- Heading -->
-                    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
+                    <h1 class="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
                         Hi, I'm <span class="text-lime-400">Samen Majumder</span>
                     </h1>
-
-                    <!-- Subheading -->
-                    <p class="text-xl md:text-2xl text-lime-300 font-medium mb-10 max-w-xl">
+                    <p class="text-base sm:text-lg md:text-2xl text-lime-300 font-medium mb-10 max-w-md">
                         BCS | English Teacher | Lifelong Learner
                     </p>
 
-                    <!-- Social Icons -->
                     <div class="flex justify-center space-x-6 mb-10">
                         <!-- GitHub -->
-                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
-                            class="text-gray-400 hover:text-lime-400 transition-transform duration-300 transform hover:scale-125">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="..." clip-rule="evenodd" />
-                            </svg>
+                        <a href="https://github.com/yourusername" target="_blank"
+                            class="text-gray-400 hover:text-lime-400 transform transition hover:scale-125">
+                            <i class="fab fa-github fa-xl"></i>
                         </a>
 
                         <!-- Twitter -->
-                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
-                            class="text-gray-400 hover:text-lime-400 transition-transform duration-300 transform hover:scale-125">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="..." />
-                            </svg>
+                        <a href="https://twitter.com/yourhandle" target="_blank"
+                            class="text-gray-400 hover:text-lime-400 transform transition hover:scale-125">
+                            <i class="fab fa-twitter fa-xl"></i>
                         </a>
 
                         <!-- LinkedIn -->
-                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
-                            class="text-gray-400 hover:text-lime-400 transition-transform duration-300 transform hover:scale-125">
-                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="..." clip-rule="evenodd" />
-                            </svg>
+                        <a href="https://linkedin.com/in/yourusername" target="_blank"
+                            class="text-gray-400 hover:text-lime-400 transform transition hover:scale-125">
+                            <i class="fab fa-linkedin fa-xl"></i>
                         </a>
                     </div>
 
-                    <!-- Call to Action Button -->
+
                     <a href="#projects"
-                        class="bg-lime-600 text-white font-semibold text-lg px-10 py-4 rounded-full shadow-xl hover:bg-lime-700 transition-all duration-300 transform hover:scale-105">
+                        class="bg-lime-600 text-white font-semibold text-lg px-8 py-3 rounded-full shadow-xl hover:bg-lime-700 transition hover:scale-105">
                         View My Work
                     </a>
                 </div>
             </div>
         </section>
 
-
-
         <!-- About Section -->
-        <section id="about" class="py-20 bg-gray-800">
-            <div class="container mx-auto px-6">
+        <section id="about" class="py-20 bg-gray-800 px-6">
+            <div class="max-w-6xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">About Me</h2>
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="md:w-1/3">
-                        <img src="assets/PicA3_vertical.jpg" alt="About Me Image" class="rounded-lg shadow-2xl w-full">
+                <div class="flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
+                    <div class="md:w-1/3 w-full">
+                        <img src="assets/PicA3_vertical.jpg" alt="About Me" class="rounded-lg shadow-2xl w-full" />
                     </div>
-                    <div class="md:w-2/3">
-                        <p class="text-lg text-gray-300 mb-6">
-                            Hello! I'm John, a passionate web developer with a knack for creating beautiful, functional,
-                            and user-centered digital experiences. With a background in design, I bridge the gap between
-                            aesthetics and functionality.
+                    <div class="md:w-2/3 w-full">
+                        <p class="text-base sm:text-lg text-gray-300 mb-6">
+                            Hello! I'm Samen, a passionate educator and tech enthusiast with a love for lifelong
+                            learning. I enjoy combining creativity and logic to build meaningful experiences.
                         </p>
-                        <p class="text-lg text-gray-300 mb-8">
-                            I'm proficient in front-end technologies like HTML, CSS, JavaScript, and modern frameworks
-                            like React. I love turning complex problems into simple, beautiful, and intuitive designs.
-                            When I'm not coding, you can find me exploring new technologies, reading, or hiking.
+                        <p class="text-base sm:text-lg text-gray-300 mb-8">
+                            I work with modern tools like HTML, Tailwind, JavaScript, and React. Beyond tech, I enjoy
+                            reading, mentoring, and exploring new ideas.
                         </p>
                         <h3 class="text-2xl font-semibold text-white mb-4">My Skills</h3>
-                        <div class="flex flex-wrap gap-4">
-                            <span
-                                class="bg-gray-700 text-lime-300 text-sm font-medium px-4 py-2 rounded-full">HTML5</span>
-                            <span class="bg-gray-700 text-lime-300 text-sm font-medium px-4 py-2 rounded-full">CSS3 &
+                        <div class="flex flex-wrap gap-3 justify-center md:justify-start">
+                            <span class="bg-gray-700 text-lime-300 text-sm px-4 py-2 rounded-full">HTML5</span>
+                            <span class="bg-gray-700 text-lime-300 text-sm px-4 py-2 rounded-full">CSS3 &
                                 Tailwind</span>
-                            <span
-                                class="bg-gray-700 text-lime-300 text-sm font-medium px-4 py-2 rounded-full">JavaScript
+                            <span class="bg-gray-700 text-lime-300 text-sm px-4 py-2 rounded-full">JavaScript
                                 (ES6+)</span>
-                            <span
-                                class="bg-gray-700 text-lime-300 text-sm font-medium px-4 py-2 rounded-full">React</span>
-                            <span
-                                class="bg-gray-700 text-lime-300 text-sm font-medium px-4 py-2 rounded-full">Node.js</span>
-                            <span
-                                class="bg-gray-700 text-lime-300 text-sm font-medium px-4 py-2 rounded-full">Figma</span>
+                            <span class="bg-gray-700 text-lime-300 text-sm px-4 py-2 rounded-full">React</span>
+                            <span class="bg-gray-700 text-lime-300 text-sm px-4 py-2 rounded-full">Node.js</span>
+                            <span class="bg-gray-700 text-lime-300 text-sm px-4 py-2 rounded-full">Figma</span>
                         </div>
                     </div>
                 </div>
@@ -145,88 +124,88 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="py-20 bg-gray-900">
-            <div class="container mx-auto px-6">
+        <section id="projects" class="py-20 bg-gray-900 px-6">
+            <div class="max-w-6xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">My Projects</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Project Card 1 -->
+
+                    <!-- Project Cards (reuse structure) -->
                     <div
                         class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="https://placehold.co/600x400/4f46e5/1f2937?text=Project+One" alt="Project 1"
-                            class="w-full h-56 object-cover">
-                        <div class="p-6">
+                        <img src="https://placehold.co/600x400/4f46e5/1f2937?text=Project+One"
+                            class="w-full h-56 object-cover" />
+                        <div class="p-6 text-center md:text-left">
                             <h3 class="text-xl font-bold text-white mb-2">E-commerce Platform</h3>
-                            <p class="text-gray-400 mb-4">A full-featured e-commerce website built with React and
-                                Node.js.</p>
-                            <div class="flex justify-end space-x-4">
+                            <p class="text-gray-400 mb-4">A React and Node.js based full-featured shopping platform.</p>
+                            <div class="flex justify-center md:justify-end space-x-4">
                                 <a href="#" class="text-lime-400 hover:text-lime-300 font-semibold">Live Demo</a>
                                 <a href="#" class="text-lime-400 hover:text-lime-300 font-semibold">Source Code</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Project Card 2 -->
+                    <!-- Duplicate and update for other projects -->
+                    <!-- Project Cards (reuse structure) -->
                     <div
                         class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="https://placehold.co/600x400/10b981/1f2937?text=Project+Two" alt="Project 2"
-                            class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Task Management App</h3>
-                            <p class="text-gray-400 mb-4">A responsive task manager to help you stay organized and
-                                productive.</p>
-                            <div class="flex justify-end space-x-4">
+                        <img src="https://placehold.co/600x400/4f46e5/1f2937?text=Project+One"
+                            class="w-full h-56 object-cover" />
+                        <div class="p-6 text-center md:text-left">
+                            <h3 class="text-xl font-bold text-white mb-2">E-commerce Platform</h3>
+                            <p class="text-gray-400 mb-4">A React and Node.js based full-featured shopping platform.</p>
+                            <div class="flex justify-center md:justify-end space-x-4">
                                 <a href="#" class="text-lime-400 hover:text-lime-300 font-semibold">Live Demo</a>
                                 <a href="#" class="text-lime-400 hover:text-lime-300 font-semibold">Source Code</a>
                             </div>
                         </div>
                     </div>
-                    <!-- Project Card 3 -->
+                    <!-- Duplicate and update for other projects -->
+                    <!-- Project Cards (reuse structure) -->
                     <div
                         class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
-                        <img src="https://placehold.co/600x400/f59e0b/1f2937?text=Project+Three" alt="Project 3"
-                            class="w-full h-56 object-cover">
-                        <div class="p-6">
-                            <h3 class="text-xl font-bold text-white mb-2">Portfolio Website</h3>
-                            <p class="text-gray-400 mb-4">A personal portfolio to showcase skills and projects to
-                                potential employers.</p>
-                            <div class="flex justify-end space-x-4">
+                        <img src="https://placehold.co/600x400/4f46e5/1f2937?text=Project+One"
+                            class="w-full h-56 object-cover" />
+                        <div class="p-6 text-center md:text-left">
+                            <h3 class="text-xl font-bold text-white mb-2">E-commerce Platform</h3>
+                            <p class="text-gray-400 mb-4">A React and Node.js based full-featured shopping platform.</p>
+                            <div class="flex justify-center md:justify-end space-x-4">
                                 <a href="#" class="text-lime-400 hover:text-lime-300 font-semibold">Live Demo</a>
                                 <a href="#" class="text-lime-400 hover:text-lime-300 font-semibold">Source Code</a>
                             </div>
                         </div>
                     </div>
+                    <!-- Duplicate and update for other projects -->
+
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-20 bg-gray-800">
-            <div class="container mx-auto px-6">
+        <section id="contact" class="py-20 bg-gray-800 px-6">
+            <div class="max-w-2xl mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold text-center text-white mb-12">Get In Touch</h2>
-                <div class="max-w-2xl mx-auto">
-                    <form action="#" method="POST" class="space-y-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-300">Full Name</label>
-                            <input type="text" name="name" id="name" autocomplete="name"
-                                class="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm py-3 px-4 text-white focus:outline-none focus:ring-lime-500 focus:border-lime-500">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-300">Email Address</label>
-                            <input type="email" name="email" id="email" autocomplete="email"
-                                class="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm py-3 px-4 text-white focus:outline-none focus:ring-lime-500 focus:border-lime-500">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
-                            <textarea id="message" name="message" rows="4"
-                                class="mt-1 block w-full bg-gray-700 border-gray-600 rounded-md shadow-sm py-3 px-4 text-white focus:outline-none focus:ring-lime-500 focus:border-lime-500"></textarea>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit"
-                                class="inline-flex justify-center py-3 px-8 border border-transparent shadow-sm text-base font-medium rounded-full text-white bg-lime-600 hover:bg-lime-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lime-500 transition-all transform hover:scale-105">
-                                Send Message
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-300">Full Name</label>
+                        <input type="text" name="name" id="name"
+                            class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-3 px-4 text-white focus:ring-lime-500 focus:border-lime-500" />
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-300">Email Address</label>
+                        <input type="email" name="email" id="email"
+                            class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-3 px-4 text-white focus:ring-lime-500 focus:border-lime-500" />
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                        <textarea name="message" id="message" rows="4"
+                            class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-md py-3 px-4 text-white focus:ring-lime-500 focus:border-lime-500"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit"
+                            class="inline-flex justify-center py-3 px-8 border border-transparent shadow-sm text-base font-medium rounded-full text-white bg-lime-600 hover:bg-lime-700 focus:ring-2 focus:ring-offset-2 focus:ring-lime-500 transition hover:scale-105">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
@@ -240,13 +219,22 @@
 
     <!-- Scroll to Top Button -->
     <button id="to-top-button" title="Go To Top"
-        class="hidden fixed z-50 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md bg-lime-600 hover:bg-indigo-700 text-white text-lg font-semibold transition-colors duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+        class="hidden fixed z-50 bottom-10 right-10 p-4 w-14 h-14 rounded-full shadow-md bg-lime-600 hover:bg-indigo-700 text-white transition-colors duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 24 24">
             <path d="M12 4l8 8h-6v8h-4v-8H4l8-8z" />
         </svg>
         <span class="sr-only">Go to top</span>
     </button>
 
+    <!-- JS for hamburger menu toggle -->
+    <script>
+        const menuBtn = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 
 </html>
